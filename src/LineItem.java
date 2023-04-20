@@ -16,7 +16,7 @@ public class LineItem {
 
     public static String getLineItem3() {
         String lineItem3 = "\nCar Vacuum \t\t\t ";
-        lineItem3 +=  Main.getItem3Spinner() +"\t " + " $24.95\t " + "$" + Double.parseDouble(Main.getItem3Spinner().toString()) * 19.99;
+        lineItem3 +=  Main.getItem3Spinner() +"\t " + " $19.99\t " + "$" + Double.parseDouble(Main.getItem3Spinner().toString()) * 19.99;
         return lineItem3;
     }
 
