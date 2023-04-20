@@ -3,6 +3,7 @@ import java.awt.*;
 
 public class Main extends JFrame {
 
+
     private static JTextField nameField;
     private static JTextField streetField;
     private static JTextField cityField;
