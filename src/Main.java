@@ -72,7 +72,7 @@ public class Main extends JFrame {
         customerPanel.add(zipLabel);
         customerPanel.add(zipField);
 
-        // Create a panel for the shopping list items
+        // Create a panel for items
         JPanel itemListPanel = new JPanel(new GridLayout(3, 2));
         JLabel item1Label = new JLabel("Toaster $29.95");
         JLabel item2Label = new JLabel("Hair Dryer $24.95");
@@ -96,17 +96,14 @@ public class Main extends JFrame {
         buttonPanel.add(orderButton);
         buttonPanel.add(quitButton);
 
-        // Add action listener to the quit button
+        // Action Listeners
         quitButton.addActionListener(e -> System.exit(0));
         orderButton.addActionListener(e -> Invoice.createInvoice(getItem1Spinner(), getItem2Spinner(), getItem3Spinner()));
 
-        // Add the panels to the main frame
         getContentPane().setLayout(new BorderLayout());
         getContentPane().add(customerPanel, BorderLayout.NORTH);
         getContentPane().add(itemListPanel, BorderLayout.CENTER);
         getContentPane().add(buttonPanel, BorderLayout.SOUTH);
-
-        // Set the size and location
         setSize(400, 400);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
